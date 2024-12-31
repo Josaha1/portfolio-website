@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.absolute {
+  position: absolute;
+}
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.-z-10 {
+  z-index: -10;
+}
+html {
+  scroll-behavior: smooth;
+}
+.active-link span {
+  color: #64ffda;
+  font-weight: bold;
+}
+
+.active-link span:first-child {
+  background: #64ffda;
+}
+.bg-#112240 {
+  background-color: #112240;
+}
+
+.bg-#0d2139 {
+  background-color: #0d2139;
+}
+
+.text-#64ffda {
+  color: #64ffda;
+}
