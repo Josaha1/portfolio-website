@@ -4,10 +4,12 @@ function About() {
   return (
     <section
       id="about"
-      className="space-y-8 min-h-screen flex flex-col justify-center"
+      className="space-y-8 min-h-screen flex flex-col justify-center p-4 md:p-8"
     >
-      <h1 className="text-5xl font-bold text-white">About</h1>
-      <p className="text-lg leading-relaxed text-gray-400">
+      {/* Section Title */}
+      <h1 className="text-3xl md:text-5xl font-bold text-white">About</h1>
+      {/* Description */}
+      <p className="text-sm md:text-lg leading-relaxed text-gray-400">
         I am a system developer with expertise in creating websites and backend
         systems. At my previous company, I was responsible for system analysis,
         website and backend development, as well as server maintenance. I am
