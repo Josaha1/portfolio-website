@@ -36,30 +36,39 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="space-y-12 min-h-screen flex flex-col justify-center"
+      className="space-y-12 min-h-screen flex flex-col justify-center px-4 md:px-12"
     >
-      <h1 className="text-5xl font-bold text-white">Projects</h1>
+      <h1 className="text-5xl font-bold text-white mb-8">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-[#112240] p-6 rounded-md shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 duration-300"
+            className="bg-[#112240] p-6 md:p-8 rounded-md shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 duration-300"
           >
+            {/* Project Title */}
             <h2 className="text-2xl font-bold text-white mb-4">
               {project.title}
             </h2>
+            {/* Project Description */}
             <p className="text-gray-400 mb-4">{project.description}</p>
+            {/* Tags */}
             <div className="flex flex-wrap gap-3 mb-4">
               {project.tags.map((tag, i) => (
                 <span
                   key={i}
-                  className="px-4 py-1 rounded-full text-sm font-medium text-[#64ffda] bg-[#0a192f] shadow-md"
+                  className="px-4 py-1 rounded-full text-sm font-medium text-[#64ffda] bg-[#0a192f] shadow-md hover:bg-[#64ffda] hover:text-[#0a192f] transition-colors duration-300"
                 >
                   {tag}
                 </span>
               ))}
             </div>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+            {/* View Project Button */}
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View details of ${project.title}`}
+            >
               <NeonButton text="View Project" />
             </a>
           </div>

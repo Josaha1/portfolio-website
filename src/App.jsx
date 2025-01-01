@@ -1,8 +1,8 @@
-import React from 'react';
-import Sidebar from './components/Sidebar';
-import About from './pages/About';
-import Experience from './pages/Experience';
-import Projects from './pages/Projects';
+import React from "react";
+import Sidebar from "./components/Sidebar";
+import About from "./pages/About";
+import Experience from "./pages/Experience";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
