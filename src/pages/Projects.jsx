@@ -36,9 +36,9 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="space-y-12 min-h-screen flex flex-col justify-center px-4 md:px-12"
+      className="space-y-12 min-h-screen flex flex-col justify-center px-6 sm:px-8 md:px-12 lg:px-20"
     >
-      <h1 className="text-5xl font-bold text-white mb-8">Projects</h1>
+      <h1 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center md:text-left">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <div
