@@ -8,29 +8,37 @@ function Projects() {
       description:
         "Developed a risk assessment platform to evaluate mental health risks in youths, providing tools for early intervention and prevention.",
       link: "https://sharesook.com/healthyemotion/",
-      tags: ["React", "PHP", "MySQL", "Tailwind CSS"],
+      tags: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
     },
     {
       title: "Sharesook Healthy DM Website",
       description:
         "Built a diabetes management website to help individuals monitor and maintain their health effectively.",
       link: "https://sharesook.com/healthydm/",
-      tags: ["Vue", "Laravel", "JavaScript", "Bootstrap"],
+      tags: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
     },
     {
       title: "Phetchabun Elderly Screening",
       description:
         "Developed a health screening platform for the elderly in Phetchabun, facilitating data export for medical staff.",
       link: "https://www.pccpbn.net/AgeScreenStep3/",
-      tags: ["Vue", "PHP", "MySQL"],
+      tags: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
     },
     {
       title: "Social Align Platform",
       description:
         "Created a social engagement platform with advanced features like chat and a digital library for youth initiatives.",
       link: "https://social-align.com/",
-      tags: ["React", "Node.js", "MongoDB", "Material UI"],
+      tags: ["PHP", "JavaScript", "MySQL", "Bootstrap", "AOS"],
     },
+    {
+      title: "Phetchabun Patient Caregiver Platform",
+      description:
+        "Developed a comprehensive caregiver platform that connects volunteers with patients in need, offering features such as appointment scheduling, health tracking, and real-time support for improved patient care.",
+      link: "https://www.healthtouchpbn.net/",
+      tags: ["PHP", "Vue", "Laravel", "typescript", "MySQL", "Bootstrap", "AOS"],
+    },
+    
   ];
 
   return (
@@ -38,7 +46,9 @@ function Projects() {
       id="projects"
       className="space-y-12 min-h-screen flex flex-col justify-center px-6 sm:px-8 md:px-12 lg:px-20"
     >
-      <h1 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center md:text-left">Projects</h1>
+      <h1 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center md:text-left">
+        Projects
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <div
